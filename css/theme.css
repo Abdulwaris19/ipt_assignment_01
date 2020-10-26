@@ -1,0 +1,418 @@
+ /*     Author: Abdul Mujeeb
+        EP-1850001 
+*/
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Robot Condensed", sans-serif;
+  overflow-x:hidden;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* ========================== Home   ==================
+=================================================== */
+#home {
+  height: 100%;
+}
+
+#cover {
+  height: 100%;
+  background-image: url("../images/bg.jpg");
+}
+
+/* ==================General Parallex scrolling for backgrounds==========
+=========================================================================== */
+
+.bg-parallex {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* content box in home section  */
+
+#home-content-box {
+  /*  use display table to act div as a table and child div as table cell toact accordingly to parent for vertical alignment*/
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#home-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#content-box-heading h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 430;
+  margin: 20px 0 20px 0;
+}
+
+#content-box-btn {
+  margin: 30px 0;
+}
+
+.navbar{
+transition:all .8s ease-in-out;
+
+}
+
+
+
+
+
+
+
+
+/* ==============================Buttons ==========================
+==================================================================*/
+
+.btn-general {
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 12px 26px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 16px;
+}
+
+.btn-white {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+  background-color: #fff;
+  color: #41464b;
+}
+
+.btn-blue {
+  border-color: #34c6d3;
+  color: #414141;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+  background-color: #34c6d3;
+  color: #fff;
+}
+
+/* Animations */
+
+#cover,
+#content-box-heading,
+#content-box-btn {
+  animation-duration: 0.5s;
+}
+
+#cover {
+  animation-delay: 0.1s;
+}
+
+#content-box-heading {
+  animation-delay: 0.7s;
+}
+
+#content-box-btn {
+  animation-delay: 1.5s;
+}
+
+/* ========= ================= Main Navbar Starts Here =====
+=============================================================*/
+
+.dark-menu {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.main-menu {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: transparent;
+}
+
+.navbar-brand {
+  margin: 0 0 0 2.5em;
+  color: #fff;
+  font-size: 24px !important;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.nav-item {
+  margin-left: 1.5em;
+}
+
+.nav-item a {
+  color: #fff;
+  font-size: 13px;
+}
+
+.nav-item a:hover {
+  color: #34c6d3;
+}
+
+.active {
+  color: #34c6d3 !important;
+}
+
+.navbar-toggler {
+  padding: 7px 12px;
+  border-radius: 0;
+  border: 1px solid white;
+}
+
+
+/* ========================== Services  ==================
+========================================================== */
+#content-box {
+  padding: 20px;
+}
+
+.content-box-title {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+
+.content-line {
+  background: #34c6d3;
+  width: 40px;
+  height: 3px;
+  margin: 0 auto 0 auto;
+}
+
+/* Service items */
+
+#Services {
+  margin: 2em 0 8em 0;
+}
+
+#service-item {
+  padding: 20px 10px;
+  margin: 20px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+#service-item .fa-icon {
+  color: #34c6d3;
+}
+
+#service-item:hover .fa-icon {
+  font-size: 60px;
+  transition: 0.1s ease-in;
+}
+
+#service-item-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 450;
+  color: #41464b;
+}
+
+#service-item-desc p {
+  margin-top: 5px;
+  color: #41464b;
+}
+
+/* ============================= Our Work Section  ==========================
+=============================================================================== */
+
+#Work {
+  margin-top: 160px;
+}
+.no-gutters,
+.row.no-gutters[class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.image-wrapper {
+  overflow: hidden;
+}
+.image-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.5);
+}
+
+.image-wrapper a:hover {
+  cursor: zoom-in;
+}
+
+/* =======================  About======================
+========================================================= */
+#About {
+  margin-top: 4.5em !important;
+  position: relative;
+  display: block;
+}
+
+
+
+.about-bg {
+  background-image: url("../images/aboutbg.jpg");
+  background-position-y: 10px;
+  border-top: 700px solid transparent;
+  border-left: 200px solid white;
+}
+
+#about-content {
+  margin: 1em 1em;
+  padding: 30px;
+}
+
+.about-btn {
+  margin: 30px 0;
+}
+
+.about-line {
+  background: #34c6d3;
+  width: 40px;
+  height: 3px;
+  margin: 0 auto 30 auto;
+}
+
+.about-content-box {
+  text-align: justify;
+}
+
+
+@media only screen and (max-width: 760px) {
+
+    .about-bg{
+        border-top:0;
+        border-left:0;
+        width:100%;
+        height:350px;
+    }
+    
+    
+}
+
+
+
+/* =============================== Contact starts here =====================
+========================================================================== */
+#Contact {
+  background: #41464b;
+  padding: 35px 30px;
+  margin: 0;
+}
+
+#Contact-message {
+  width: 100%;
+  resize: none;
+  height: 140px;
+}
+.site-info h3,
+#contact-right h3 {
+  font-size: 27px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  background: url("../images/map.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-info address p,
+.site-info p {
+  margin-bottom: 10px;
+  color: white;
+}
+
+#contact-message input,
+#contact-message textarea {
+  border-color: #fff;
+  width: 100%;
+  padding: 5px 15px;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 10px;
+  border-width: 0.7px;
+  border-style: solid;
+}
+#send-message {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+#send-message:hover,#send-message:link,#send-message:visited,#send-message:active {
+  background: #fff;
+  color: #000;
+}
+
+address strong,
+.phone-email p strong {
+  letter-spacing: 1px;
+}
+
+#contact-right .form input:focus,
+#contact-right .form textarea:focus {
+  border-color: #34c6d3;
+  border-width: 1px;
+}
+
+/* ================================ OUR TEAM STARTS =====================
+======================================================================== */
+
+#Team {
+  margin: 7em 0;
+}
+.team-member {
+  margin-right: 15px;
+}
+.member-social-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.member-social-list li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.member-info {
+  padding: 10px 0 30px 0;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.member-name {
+  color: #333;
+  margin-top: 5px;
+}
+.member-designation {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  color: #34c6d3;
+  margin-top: 5px;
+}
